@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution Lingua-IND-Nums2Words,
+version 0.044:
+
+  Lingua::IND::nums2words currently can handle real numbers in normal and scientific form in the order of hundreds of trillions. It also preserves formatting in the number string (e.g, given "1.00" Lingua::IND::nums2words will pronounce the zeros).
+
+This software is copyright (c) 2012 by Steven Haryanto.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
