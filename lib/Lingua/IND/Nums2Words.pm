@@ -1,7 +1,7 @@
 # For Emacs: -*- mode:cperl; mode:folding -*-
 
 package Lingua::IND::Nums2Words;
-# ABSTRACT: Lingua::IND::nums2words currently can handle real numbers in normal and scientific form in the order of hundreds of trillions. It also preserves formatting in the number string (e.g, given "1.00" Lingua::IND::nums2words will pronounce the zeros).
+# ABSTRACT: Number 2 word conversion in IND.
 
 # {{{ use block
 
@@ -13,8 +13,7 @@ use Perl6::Export::Attrs;
 # }}}
 # {{{ variables declaration
 
-my($ver)      = ('$Rev: 440 $' =~ m{(\d+)}xms);
-our $VERSION = $ver / 10_000;
+our $VERSION = 0.0577;
 
 our $Dec_char  = ".";
 our $Neg_word  = "negatif";
@@ -214,7 +213,7 @@ Lingua::IND::Nums2Words - convert number to Indonesian verbage.
 
 =head1 VERSION
 
-version 0.044
+version 0.0577
 
 =head1 SYNOPSIS
 
@@ -224,6 +223,8 @@ version 0.044
   print nums2words_simple(123) ; # "satu dua tiga"
 
 =head1 DESCRIPTION
+
+Number 2 word conversion in IND.
 
 Lingua::IND::nums2words currently can handle real numbers in normal and scientific
 form in the order of hundreds of trillions. It also preserves formatting

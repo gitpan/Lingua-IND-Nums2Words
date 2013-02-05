@@ -1,5 +1,5 @@
 ---
-abstract: "Lingua::IND::nums2words currently can handle real numbers in normal and scientific form in the order of hundreds of trillions. It also preserves formatting in the number string (e.g, given \"1.00\" Lingua::IND::nums2words will pronounce the zeros)."
+abstract: 'Number 2 word conversion in IND.'
 author:
   - 'Steven Haryanto <sh@hhh.indoglobal.com>'
 build_requires:
@@ -18,4 +18,4 @@ requires:
   Perl6::Export::Attrs: 0
   strict: 0
   warnings: 0
-version: 0.044
+version: 0.0577

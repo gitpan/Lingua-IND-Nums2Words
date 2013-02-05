@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Lingua::IND::nums2words currently can handle real numbers in normal and scientific form in the order of hundreds of trillions. It also preserves formatting in the number string (e.g, given \"1.00\" Lingua::IND::nums2words will pronounce the zeros).",
+  "ABSTRACT" => "Number 2 word conversion in IND.",
   "AUTHOR" => "Steven Haryanto <sh\@hhh.indoglobal.com>",
   "BUILD_REQUIRES" => {
     "Test::More" => 0,
@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.044",
+  "VERSION" => "0.0577",
   "test" => {
     "TESTS" => "t/*.t"
   }
