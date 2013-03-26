@@ -14,7 +14,7 @@ use Perl6::Export::Attrs;
 # }}}
 # {{{ variables declaration
 
-our $VERSION = 0.0682;
+our $VERSION = 0.07;
 
 our $Dec_char  = ".";
 our $Neg_word  = "negatif";
@@ -214,7 +214,7 @@ Lingua::IND::Nums2Words - convert number to Indonesian verbage.
 
 =head1 VERSION
 
-version 0.0682
+version 0.07
 
 =head1 SYNOPSIS
 
