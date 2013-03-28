@@ -14,7 +14,7 @@ use Perl6::Export::Attrs;
 # }}}
 # {{{ variables declaration
 
-our $VERSION = 0.07;
+our $VERSION = 0.0708;
 
 our $Dec_char  = ".";
 our $Neg_word  = "negatif";
@@ -71,6 +71,9 @@ sub hmm___ { my @a = @_;print "(", (caller 1)[3], ") Hmm, ", @a if $DEBUG; retur
 # {{{ n2w1                    handle scientific notation
 sub n2w1 {
         my $num = shift // return '';
+
+        return $Zero_word if $num >= 10 ** 15;    # not quadrillion and more
+
         my @words;
 
         $num =~ /^(.+)[Ee](.+)$/ and
@@ -173,6 +176,9 @@ sub n2w4 {
 # {{{ n2w5                    handle digits after decimal
 sub n2w5 {
         my $num = shift // return '';
+
+        return $Zero_word if $num >= 10 ** 15;    # not quadrillion and more
+
         my @words = ();
         my $i;
         my $t;
@@ -214,7 +220,7 @@ Lingua::IND::Nums2Words - convert number to Indonesian verbage.
 
 =head1 VERSION
 
-version 0.07
+version 0.0708
 
 =head1 SYNOPSIS
 
@@ -231,6 +237,8 @@ Lingua::IND::nums2words currently can handle real numbers in normal and scientif
 form in the order of hundreds of trillions. It also preserves formatting
 in the number string (e.g, given "1.00" Lingua::IND::nums2words will pronounce the
 zeros).
+
+Numbers > 10 ** 15 returns 0.
 
 =head1 FUNCTIONS
 
